@@ -2,7 +2,7 @@
   "name": "Ghost on Heroku",
   "description": "Just a blogging platform",
   "logo": "https://raw.githubusercontent.com/TryGhost/Ghost/master/core/client/assets/img/large.png",
-  "repository": "https://github.com/cobyism/ghost-on-heroku",
+  "repository": "https://github.com/ryanvanderpol/ghost-on-heroku",
   "success_url": "/ghost",
   "addons": [
     "heroku-postgresql",
@@ -12,6 +12,22 @@
     "HEROKU_URL": {
       "description": "The URL of this Heroku app.",
       "value": "http://YOURAPPNAME.herokuapp.com"
+    },
+    "AWS_ACCESS_ID": {
+      "description": "The Access ID of your IAM user for your S3 bucket.",
+      "value": ""
+    },
+    "AWS_ACCESS_SECRET": {
+      "description": "The Access Secret of your IAM user for your S3 bucket.",
+      "value": ""
+    },
+    "AWS_BUCKET_NAME": {
+      "description": "The S3 bucket name for storing files.",
+      "value": ""
+    },
+    "AWS_BUCKET_REGION": {
+      "description": "The region in which you created your S3 bucket (eg. Ireland)",
+      "value": ""
     }
   }
 }

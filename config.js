@@ -19,7 +19,7 @@ config = {
         }
       }
     },
-    fileStorage: false,
+    fileStorage: true,
     database: {
       client: 'postgres',
       connection: process.env.DATABASE_URL,
@@ -31,6 +31,12 @@ config = {
     },
     paths: {
       contentPath: path.join(__dirname, '/content/')
+    },
+    aws: {
+      accessKeyId: process.env.AWS_ACCESS_ID,
+      secretAccessKey: process.env.AWS_ACCESS_SECRET,
+      bucket: process.env.AWS_BUCKET_NAME,
+      region: process.env.AWS_BUCKET_REGION
     }
   },
 
